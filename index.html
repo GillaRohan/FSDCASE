@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="maxxwoodApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAXXWOOD — Home Interior Solutions | Convert Your House into a Beautiful Home</title>
+    
+    <!-- Meta SEO -->
+    <meta name="description" content="Maxxwood Home Interior Solutions in Mancherial. 4+ Years, 180+ Completed Projects. 100% Water Proof, Termite Proof, and Fire Proof Modular Interiors.">
+    <meta name="keywords" content="Maxxwood, Interior Solutions, Modular Kitchen, TV Units, False Ceiling, Mancherial Interior Designer, Naspur">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body ng-controller="MainController">
+
+    <!-- Top Contact Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-content">
+            <div class="top-bar-links">
+                <a href="tel:+917997770059"><i class="fas fa-phone-alt"></i> +91 79977 70059</a>
+                <a href="tel:+917997770064"><i class="fas fa-phone-alt"></i> +91 79977 70064</a>
+                <span><i class="fas fa-map-marker-alt"></i> Naspur, Mancherial - 504302</span>
+            </div>
+            <div class="top-badge">
+                <i class="fas fa-award"></i> 4+ Years Experience | 180+ Projects Completed
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation Header -->
+    <header class="site-header">
+        <div class="container nav-wrapper">
+            <a href="index.html" class="brand-logo" aria-label="Maxxwood Home">
+                <img src="assets/logo/logo.svg" alt="Maxxwood Home Interior Solutions Logo">
+            </a>
+
+            <nav>
+                <ul class="nav-links" id="mainNav">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="pages/about.html">About Us</a></li>
+                    <li><a href="pages/services.html">Services</a></li>
+                    <li><a href="pages/projects.html">Projects</a></li>
+                    <li><a href="pages/contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="pages/contact.html" class="btn-primary">
+                    <i class="fas fa-calendar-check"></i> Free Consultation
+                </a>
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Banner (Based on Official Brochure) -->
+    <section class="hero-section">
+        <div class="container hero-grid">
+            <div class="hero-text-content">
+                <div class="hero-tag">
+                    <i class="fas fa-gem"></i> Premium Home Interiors — Everything at One Place
+                </div>
+                <h1 class="hero-title">
+                    CONVERT YOUR HOUSE
+                    <span>INTO A BEAUTIFUL HOME</span>
+                </h1>
+                <p class="hero-desc">
+                    Bringing elegance, style, and unmatched durability to your space. Custom factory-crafted modular kitchens, designer living rooms, TV units, luxury wardrobes, and pooja sanctuaries tailored to your dreams.
+                </p>
+
+                <!-- 4 Years / 180+ Projects Flyer Highlight -->
+                <div class="hero-stats-badge">
+                    <div class="hero-stats-number">180+</div>
+                    <div class="hero-stats-text">
+                        <strong>4 YEARS</strong> OF EXCELLENCE<br>
+                        <span>LANDMARK PROJECTS DELIVERED</span>
+                    </div>
+                </div>
+
+                <div class="hero-cta-group">
+                    <a href="#calculator" class="btn-gold">
+                        <i class="fas fa-calculator"></i> Calculate Instant Estimate
+                    </a>
+                    <a href="pages/projects.html" class="btn-outline">
+                        <i class="fas fa-images"></i> View Real Portfolio
+                    </a>
+                </div>
+            </div>
+
+            <!-- Flyer Visual with Diamond Mosaic Badges -->
+            <div class="flyer-visual-wrapper">
+                <div class="flyer-main-card">
+                    <div class="flyer-main-img-box">
+                        <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=80" alt="Maxxwood Living Room Interior">
+                    </div>
+
+                    <!-- 5 Diamond Inset Photos matching the flyer collage -->
+                    <div class="diamond-badges-row">
+                        <div class="diamond-badge" title="Modular Kitchen">
+                            <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=300&q=80" alt="Kitchen">
+                        </div>
+                        <div class="diamond-badge" title="Living & TV Unit">
+                            <img src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=300&q=80" alt="TV Unit">
+                        </div>
+                        <div class="diamond-badge" title="Master Bedroom">
+                            <img src="https://images.unsplash.com/photo-1540518614846-7eded433c457?auto=format&fit=crop&w=300&q=80" alt="Master Bed">
+                        </div>
+                        <div class="diamond-badge" title="Pooja Mandir">
+                            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=300&q=80" alt="Pooja Room">
+                        </div>
+                    </div>
+
+                    <div class="flyer-experience-strip">
+                        <h4>MAXX WOOD HOME INTERIOR SOLUTIONS</h4>
+                        <p style="font-size: 0.85rem; color: #706760; margin-top: 4px;">BRINGING ELEGANCE AND STYLE TO YOUR SPACE</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The 3 Pillars Section (Water Proof | Termite Proof | Fire Proof) -->
+    <section class="pillars-section">
+        <div class="container">
+            <div class="pillars-header">
+                <h2>WATER PROOF &nbsp;|&nbsp; TERMITE PROOF &nbsp;|&nbsp; FIRE PROOF</h2>
+                <p style="color: #F3E5AB; font-size: 0.95rem; margin-top: 6px;">Engineered with 100% Calibrated BWP Marine Core & High-Grade Heat Resistant Resins</p>
+            </div>
+            <div class="pillars-grid">
+                <div class="pillar-card" ng-repeat="pillar in pillars">
+                    <div class="pillar-icon">
+                        <i ng-class="pillar.icon"></i>
+                    </div>
+                    <h3>{{pillar.title}}</h3>
+                    <p>{{pillar.desc}}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Animated Statistics Bar -->
+    <section class="stats-container">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <span class="stat-count" data-target="4" data-suffix="+">4+</span>
+                    <span class="stat-label">Years of Craftsmanship</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-count" data-target="180" data-suffix="+">180+</span>
+                    <span class="stat-label">Projects Completed</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-count" data-target="15" data-suffix="+">15+</span>
+                    <span class="stat-label">Specialized Services</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-count" data-target="100" data-suffix="%">100%</span>
+                    <span class="stat-label">Quality Guaranteed</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Services (15 Flyer Services) -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title-wrap">
+                <span class="section-subtitle">Our Specializations</span>
+                <h2 class="section-title">Everything at One Place For Your Dream Home</h2>
+                <p class="section-desc">From cozy living rooms to automated smart homes, discover our full suite of interior solutions built to last generations.</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card" ng-repeat="service in featuredServices">
+                    <div class="service-card-thumb">
+                        <img ng-src="{{service.image}}" alt="{{service.title}}">
+                        <span class="service-card-tag">{{service.category}}</span>
+                    </div>
+                    <div class="service-card-body">
+                        <h3 class="service-card-title">{{service.title}}</h3>
+                        <div class="service-card-tagline">{{service.tagline}}</div>
+                        <p class="service-card-desc">{{service.desc}}</p>
+                        
+                        <ul class="service-features-list">
+                            <li ng-repeat="feat in service.features">
+                                <i class="fas fa-check-circle"></i> {{feat}}
+                            </li>
+                        </ul>
+
+                        <a href="pages/contact.html" class="btn-outline" style="text-align: center; justify-content: center;">
+                            Enquire About This
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 50px;">
+                <a href="pages/services.html" class="btn-primary">
+                    <i class="fas fa-th-list"></i> Explore All 15 Services
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Cost Estimator (AngularJS Two-Way Data Binding) -->
+    <section class="calculator-section" id="calculator">
+        <div class="container">
+            <div class="section-title-wrap">
+                <span class="section-subtitle">Transparent Pricing</span>
+                <h2 class="section-title">Interactive Interior Cost Estimator</h2>
+                <p class="section-desc">Get an accurate, instant quotation estimate configured specifically for your floor plan and finish preferences.</p>
+            </div>
+
+            <div class="calc-card-grid">
+                <!-- Controls -->
+                <div class="calc-controls">
+                    <h3><i class="fas fa-sliders-h"></i> Customize Your Requirement</h3>
+
+                    <!-- Home Type -->
+                    <div class="calc-field-group">
+                        <label class="calc-label">1. Select Home Configuration</label>
+                        <div class="calc-radio-pills">
+                            <label class="calc-radio-pill">
+                                <input type="radio" name="homeType" value="1bhk" ng-model="calc.homeType" ng-change="updateEstimate()">
+                                <span>1 BHK</span>
+                            </label>
+                            <label class="calc-radio-pill">
+                                <input type="radio" name="homeType" value="2bhk" ng-model="calc.homeType" ng-change="updateEstimate()">
+                                <span>2 BHK</span>
+                            </label>
+                            <label class="calc-radio-pill">
+                                <input type="radio" name="homeType" value="3bhk" ng-model="calc.homeType" ng-change="updateEstimate()">
+                                <span>3 BHK</span>
+                            </label>
+                            <label class="calc-radio-pill">
+                                <input type="radio" name="homeType" value="4bhk" ng-model="calc.homeType" ng-change="updateEstimate()">
+                                <span>4 BHK</span>
+                            </label>
+                            <label class="calc-radio-pill">
+                                <input type="radio" name="homeType" value="villa" ng-model="calc.homeType" ng-change="updateEstimate()">
+                                <span>Villa</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Package Level -->
+                    <div class="calc-field-group">
+                        <label class="calc-label">2. Finish & Material Grade</label>
+                        <div class="calc-radio-pills">
+                            <label class="calc-radio-pill">
+                                <input type="radio" name="packageType" value="essential" ng-model="calc.packageType" ng-change="updateEstimate()">
+                                <span>Essential Woodwork</span>
+                            </label>
+                            <label class="calc-radio-pill">
+                                <input type="radio" name="packageType" value="premium" ng-model="calc.packageType" ng-change="updateEstimate()">
+                                <span>Premium Acrylic & Veneer</span>
+                            </label>
+                            <label class="calc-radio-pill">
+                                <input type="radio" name="packageType" value="luxury" ng-model="calc.packageType" ng-change="updateEstimate()">
+                                <span>Royal Luxury & Fluted</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Scope Add-ons -->
+                    <div class="calc-field-group">
+                        <label class="calc-label">3. Include Rooms & Upgrades</label>
+                        <div class="calc-checkboxes">
+                            <label class="calc-check-item">
+                                <input type="checkbox" ng-model="calc.includeKitchen" ng-change="updateEstimate()">
+                                <span>Waterproof Modular Kitchen</span>
+                            </label>
+                            <label class="calc-check-item">
+                                <input type="checkbox" ng-model="calc.includeFalseCeiling" ng-change="updateEstimate()">
+                                <span>Gyproc False Ceiling & Cove</span>
+                            </label>
+                            <label class="calc-check-item">
+                                <input type="checkbox" ng-model="calc.includeTvUnit" ng-change="updateEstimate()">
+                                <span>Fluted TV Unit Console</span>
+                            </label>
+                            <label class="calc-check-item">
+                                <input type="checkbox" ng-model="calc.includePooja" ng-change="updateEstimate()">
+                                <span>Teak / Backlit Pooja Mandir</span>
+                            </label>
+                            <label class="calc-check-item">
+                                <input type="checkbox" ng-model="calc.includeAutomation" ng-change="updateEstimate()">
+                                <span>Smart Home Automation</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Live Summary Receipt -->
+                <div class="calc-summary-box">
+                    <div>
+                        <div class="calc-summary-title">
+                            <i class="fas fa-file-invoice-dollar"></i> Estimated Investment Receipt
+                        </div>
+                        <div class="calc-summary-list">
+                            <div class="calc-summary-item" ng-repeat="item in estimateResult.breakdown">
+                                <span>{{item.item}}</span>
+                                <strong>{{item.amount | currency}}</strong>
+                            </div>
+                            <div class="calc-summary-item" style="color: #68D391;">
+                                <span>Factory Direct Discount (10%)</span>
+                                <strong>- {{estimateResult.discountSavings | currency}}</strong>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="calc-summary-total">
+                            <div class="calc-total-label">Estimated Budget (Approx)</div>
+                            <div class="calc-total-amount">{{estimateResult.grandTotal | currency}}</div>
+                            <div style="font-size: 0.8rem; color: #FFF; margin-top: 4px;">
+                                <i class="fas fa-clock"></i> Delivery Guarantee: {{estimateResult.executionDays}} Days
+                            </div>
+                        </div>
+                        <a href="pages/contact.html" class="btn-gold" style="width: 100%; justify-content: center;">
+                            <i class="fas fa-file-pdf"></i> Lock This Pricing & Get Free 3D Design
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-title-wrap">
+                <span class="section-subtitle">Customer Trust</span>
+                <h2 class="section-title">Loved by 180+ Homeowners</h2>
+                <p class="section-desc">Hear what our satisfied clients across Mancherial, Naspur, and nearby towns say about Maxxwood.</p>
+            </div>
+
+            <div class="testimonials-slider-wrap">
+                <div class="testimonial-card active-slide">
+                    <div class="testi-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testi-quote">"Maxxwood converted our bare 3BHK flat into a royal paradise! Their promise of 100% Water Proof and Termite Proof wood is 100% real. Their modular kitchen and TV unit craftsmanship is unmatched in Mancherial."</p>
+                    <h4 class="testi-author">Dr. K. Srinivas Rao</h4>
+                    <span class="testi-meta">Mancherial • 3BHK Complete Interior</span>
+                </div>
+
+                <div class="testimonial-card" style="display: none;">
+                    <div class="testi-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testi-quote">"180+ completed projects gave us confidence to choose them for our independent duplex villa. Delivered within 40 days without any cost escalations. Exceptional finishing and high-grade fittings!"</p>
+                    <h4 class="testi-author">Rajeshwar Reddy</h4>
+                    <span class="testi-meta">Naspur • Duplex Villa Woodwork & Ceiling</span>
+                </div>
+
+                <div class="testimonial-card" style="display: none;">
+                    <div class="testi-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testi-quote">"The Pooja room design and dress units they made are simply breathtaking. The team was courteous, clean, and delivered true luxury at honest pricing."</p>
+                    <h4 class="testi-author">P. Vani Krishna</h4>
+                    <span class="testi-meta">Bellampalli Road • Custom Pooja & Bedroom Suite</span>
+                </div>
+
+                <div class="slider-controls">
+                    <button class="slider-btn" id="prevTestimonial" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+                    <div class="carousel-dots" style="display: flex; gap: 8px;">
+                        <span class="dot active" style="width: 10px; height: 10px; background: var(--primary); border-radius: 50%; cursor: pointer;"></span>
+                        <span class="dot" style="width: 10px; height: 10px; background: #D0C6BC; border-radius: 50%; cursor: pointer;"></span>
+                        <span class="dot" style="width: 10px; height: 10px; background: #D0C6BC; border-radius: 50%; cursor: pointer;"></span>
+                    </div>
+                    <button class="slider-btn" id="nextTestimonial" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Accordion FAQs -->
+    <section class="faq-section">
+        <div class="container" style="max-width: 860px;">
+            <div class="section-title-wrap">
+                <span class="section-subtitle">Common Inquiries</span>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+            </div>
+
+            <div class="accordion-list">
+                <div class="accordion-item" ng-repeat="faq in faqs">
+                    <div class="accordion-header">
+                        <span>{{faq.q}}</span>
+                        <i class="fas fa-chevron-down accordion-icon"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>{{faq.a}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-col footer-about">
+                <h4 style="color: var(--white); font-size: 1.5rem; margin-bottom: 15px;">
+                    maxx<span style="color: var(--accent);">wood</span>
+                </h4>
+                <p><strong>HOME INTERIOR SOLUTIONS</strong> — Everything at One Place.<br>Bringing elegance and style to your space with 100% Water Proof, Termite Proof, and Fire Proof wood craftsmanship.</p>
+                <div style="display: flex; gap: 12px; margin-top: 15px;">
+                    <a href="https://wa.me/917997770059" target="_blank" class="btn-gold" style="padding: 8px 16px; font-size: 0.85rem;">
+                        <i class="fab fa-whatsapp"></i> WhatsApp Us
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-col footer-links">
+                <h4>Quick Navigation</h4>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                    <li><a href="pages/about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                    <li><a href="pages/services.html"><i class="fas fa-chevron-right"></i> Our 15 Services</a></li>
+                    <li><a href="pages/projects.html"><i class="fas fa-chevron-right"></i> Completed Projects</a></li>
+                    <li><a href="pages/contact.html"><i class="fas fa-chevron-right"></i> Free Consultation</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col footer-links">
+                <h4>Featured Services</h4>
+                <ul>
+                    <li><a href="pages/services.html"><i class="fas fa-chevron-right"></i> Modular Kitchen</a></li>
+                    <li><a href="pages/services.html"><i class="fas fa-chevron-right"></i> TV Units & Partitions</a></li>
+                    <li><a href="pages/services.html"><i class="fas fa-chevron-right"></i> Designer Pooja Room</a></li>
+                    <li><a href="pages/services.html"><i class="fas fa-chevron-right"></i> Gyproc False Ceiling</a></li>
+                    <li><a href="pages/services.html"><i class="fas fa-chevron-right"></i> Smart Home Automation</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Official Contact</h4>
+                <ul class="footer-contact-list">
+                    <li>
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <a href="tel:+917997770059">+91 79977 70059</a><br>
+                            <a href="tel:+917997770064">+91 79977 70064</a><br>
+                            <a href="tel:+917997770063">+91 79977 70063</a>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>H.no 5-66/8, Flood colony, Main road, Naspur, Mancherial, 504302.</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-clock"></i>
+                        <span>Mon - Sat: 9:30 AM - 8:30 PM</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <div>
+                &copy; 2026 MAXXWOOD HOME INTERIOR SOLUTIONS. All Rights Reserved.
+            </div>
+            <div>
+                Crafted with HTML5, CSS3, jQuery & AngularJS
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Actions -->
+    <a href="https://wa.me/917997770059" target="_blank" class="floating-whatsapp" title="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <div class="back-to-top" id="backToTop" title="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- Scripts (Ordered for Academic & Production Perfection) -->
+    <script src="js/jquery/jquery.min.js"></script>
+    <script src="js/angular/angular.min.js"></script>
+    <script src="js/utils/validation.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/services/dataService.js"></script>
+    <script src="js/services/estimateService.js"></script>
+    <script src="js/controllers/mainController.js"></script>
+    <script src="js/jquery/custom-jquery.js"></script>
+</body>
+</html>
+
